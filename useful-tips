@@ -1,0 +1,13 @@
+-----------------------------
+Tip Added on : 29-05-2020
+Css Scoping in React
+Step1: execute *react-scripts eject*
+Step2: Navigate to Config Folder(it will only created once above command completed execution)
+Step3: open webpack.config.dev.js
+    1) we have one block for css handling under that we have objects named ad options
+	2) under options object add following properties
+	     modules: true,
+         localIdentName: '[name]__[local]__[hash:base64:5]'
+Step4: repeat Step 3 for webpack.config.prod.js as well
+Step5: Stop Application and run again after executing command *npm install*
+-----------------------------
